@@ -1,8 +1,23 @@
 aid: aristotle
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/aristotle.png
 name: Aristotle
-description: 'Aristotle is a company surfaced as a portfolio company of true-ventures and added to the
-  API Evangelist network as a stub for enrichment. Sector: ai. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: 'Aristotle (heyaristotle.com) is an AI tutoring platform that delivers personalized, one-on-one,
+  dialogue-based instruction across all subjects. Rather than lecturing or simply marking answers wrong, it
+  uses a Socratic, voice-first approach to diagnose conceptual misconceptions and verifies each response
+  turn-by-turn before delivering it to the student. Positioned as an affordable alternative to human tutors,
+  its methodology is grounded in learning science (Bloom''s two-sigma work, ICAP, LearnLM benchmarks).
+  Backed by True Ventures. Sector: EdTech / AI education. No public developer API or SDK surface at this time.'
 url: https://raw.githubusercontent.com/api-evangelist/aristotle/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +27,14 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
-- Ai
+- AI
+- Education
+- EdTech
+- Tutoring
+- Learning
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +42,24 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/aristotle-domain-security.yml
 - type: Website
   url: https://www.heyaristotle.com/
+- type: GettingStarted
+  url: https://www.heyaristotle.com/go/onboard
+- type: Login
+  url: https://app.heyaristotle.com/signin
+- type: Pricing
+  url: https://www.heyaristotle.com/pricing
+- type: Blog
+  url: https://www.heyaristotle.com/blog
+- type: TermsOfService
+  url: https://www.heyaristotle.com/terms
+- type: PrivacyPolicy
+  url: https://www.heyaristotle.com/privacy
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
